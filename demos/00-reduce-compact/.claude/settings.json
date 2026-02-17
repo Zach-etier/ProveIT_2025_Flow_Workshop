@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(README.md)",
+      "Edit(README.md)"
+    ]
+  }
+}

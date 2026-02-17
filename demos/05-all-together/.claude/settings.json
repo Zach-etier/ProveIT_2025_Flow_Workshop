@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(README.md)",
+      "Edit(README.md)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/validate-shift-report.sh",
+            "statusMessage": "Validating shift report sections..."
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/stamp-shift-report.sh",
+            "statusMessage": "Stamping shift report..."
+          }
+        ]
+      }
+    ]
+  }
+}

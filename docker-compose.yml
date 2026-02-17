@@ -1,0 +1,19 @@
+name: timebase-virtualfactory
+
+services:
+  historian:
+    image: timebase/historian
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 4096m
+    hostname: historian
+    container_name: vf-historian
+    ports:
+      - "4511:4511"
+    restart: unless-stopped
+    volumes:
+      - ./virtualfactory/historian/settings:/settings
+      - ./virtualfactory/historian/data:/data
+      - ./virtualfactory/historian/logs:/logs

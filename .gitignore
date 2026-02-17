@@ -1,0 +1,21 @@
+# Virtual factory runtime data
+virtualfactory/historian/data/
+virtualfactory/historian/logs/
+virtualfactory/collectors/*/data/
+virtualfactory/collectors/*/logs/
+virtualfactory/explorer/logs/
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# Runtime outputs
+analyses/
+
+# Demo git repos (created by demos/setup.sh at demo time)
+demos/*/.git
+
+# Node modules (from MCP servers in demo 01)
+node_modules/
+.npm/
