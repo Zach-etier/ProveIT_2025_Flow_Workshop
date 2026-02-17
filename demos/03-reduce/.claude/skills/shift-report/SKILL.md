@@ -1,8 +1,9 @@
 ---
 name: shift-report
+description: Generate a shift handoff intelligence report for an Enterprise B beverage bottling site. Orchestrates production analysis scripts, SPC analysis, and historian queries to produce a structured report. Use when user says "/shift-report", "shift report", or asks for a shift handoff report.
 ---
 
-description: Generate a shift handoff intelligence report for an Enterprise B beverage bottling site. Orchestrates production analysis scripts, SPC analysis, and historian queries to produce a structured report. Use when user says "/shift-report", "shift report", or asks for a shift handoff report.
+
 
 # Shift Handoff Intelligence Report
 
