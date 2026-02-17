@@ -1,5 +1,4 @@
 # Virtual factory runtime data
-virtualfactory/historian/data/
 virtualfactory/historian/logs/
 virtualfactory/collectors/*/data/
 virtualfactory/collectors/*/logs/
